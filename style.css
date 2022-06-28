@@ -20,6 +20,7 @@ header ul {
   color: white;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }  
 
 header ul li {
@@ -40,7 +41,7 @@ header ul li a {
 a.active,
 a:hover {
   background: #d1d1d1;
-  border-radius: 10px;
+  border-radius: 2px;
   transition: 0.5s;
 }
 
@@ -199,12 +200,13 @@ footer p{
   /* header styles
   ------------------------------ */
   header{
-      height: 300px;
+      height: 900px;
       padding: 30px 15px;
+  
   }
   
-  .logo img{
-      width: 125px;
+  .logo-1 img{
+      width: 900px;
       height: 75px;
   }
 
@@ -225,4 +227,78 @@ footer p{
 }
 
 }
+@media screen and (max-width:720px)
+{
+  .Sign-in-container{
+    width: 280px;
+  }
+  .button{width: 250px;}
+  .details input{
+    width:250px;
+  }
+  .forgot{margin-left: -50px;
+  }
 
+  /* header styles
+  ------------------------------ */
+  header{
+    max-width: 300px;
+    padding: 0px 0px;
+  }
+
+  body {
+    height: 250px;
+    padding: 0px;
+    width: 300px;
+    margin: 0px;
+    border: 0px;
+}
+.sign-up-1{
+  margin-top: -90px;
+}
+.have-an-account{
+  padding: 10px 10px 10px 10px;
+}
+.logo-1 img{
+    width: 150px;
+    height: 75px;
+    margin-top: 20px;
+}
+.logo-1{
+  display: inline-flex;
+  width: 300px;
+  height: 150px;
+  margin: 0px;
+  text-align: center;
+}
+
+.signin p{
+    width: 150px;
+    text-align: center;
+}
+
+
+  /* Main styles
+  ------------------------------ */
+  .icon a img{
+    width: 20px;
+    align-items: center;
+    padding:10px 10px 10px 10px;
+    }
+    
+    .icon{
+      background-color: #D9D9D9;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-shadow:0px 4px 6px rgba(0, 0, 0, 0.25);
+    }
+    .footer{
+      width: 300px;
+}
+
+
+}
