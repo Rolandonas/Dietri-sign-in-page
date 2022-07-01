@@ -2,14 +2,14 @@
 /* Header styles
 ------------------------------ */
 header{
-  padding: 30px 50px;
+  padding:0px 0px;
   height: 270px;
+  width: relative;
   background-color: #7a121b;
   color: white;
 }
 
 header ul {
-  float: right;
   margin-right: 10px;
   color: #ffffff;
   list-style-type: none;
@@ -22,19 +22,33 @@ header ul {
   font-weight: 700;
   cursor: pointer;
 }  
-
-header ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
+.headertext{
+  float: right;
+  margin-top: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+.sign-up-1{
+  font-size: 25px;
 }
 
-header ul li a {
+.have-an-account{
+color: #ffffff;
+  font-size: 16px;
+}
+
+header ul li {
+  display: inline;
+  line-height: 0px;
+  margin: 0 10px;
+}
+
+/* header ul li a {
   color: #efefef;
   font-size: 20px;
   padding: 7px 13px;
   border-radius: 2px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
 }
 /* main
 ------------------------------ */
@@ -190,41 +204,15 @@ footer p{
 }
 
 -----------------------------------
-@media screen and (max-width: 720%) {
 
 
+@media screen and (max-width: 600px) {}
 
-@media screen and (max-width: 720px) {
-  /* header styles
-  ------------------------------ */
- 
-  
-  .logo-1 img{
-      width: 900px;
-      height: 75px;
-  }
-
-  .signin p{
-      width: 150px;
-      text-align: center;
-  }
-
-  /* Main styles
-  ------------------------------ */
-  .main{
-      padding: 30px 10px;
-      width: 90%;
-      height: 400px;
-      margin: -100px auto 10px;
-  }
-
-}
-
-}
-@media screen and (max-width:720px)
+@media screen and (max-width:600px)
 {
   .Sign-in-container{
-    width: 390px;
+    width: 80%;
+    align-items: center;
   }
   .button{width: 250px;}
   .details input{
@@ -233,43 +221,48 @@ footer p{
   .forgot{margin-left: 0px;
   }
 
-  /* header styles
-  ------------------------------ */
+  header styles
+  ------------------------------
   header{
-    max-width: 390px;
-    padding: 0px 0px;
+    width: 100%;
   }
 
   body {
     height: 250px;
     padding: 0px;
-    width: 390px;
     margin: 0px;
     border: 0px;
 }
 .logoheader{
-  line-height: 10px;
+  line-height: 0px;
 }
 .sign-up-1{
-  margin-top: -50px;
-  text-align: right;
-  float: right;
-  ;
+  font-size: 25px;
+
 }
 
 .have-an-account{
 color: #ffffff;
+  margin-left: 10%;
+  font-size: 16px;
+}
+.headertext{
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
   float: right;
-  margin:0px
+}
+.header{
+  padding: 0px;
 }
 .logo-1 img{
-    width: 150px;
-    height: 75px;
-    margin-top: 20px;
+    width: 170px;
+    height: 102px;
+    margin-top: 0px;
 }
 .logo-1{
-  display: inline-flex;
-  width: 390px;
+  display: inline;
+  width: 100%;
   height: 150px;
   margin: 0px;
   text-align: center;
@@ -281,13 +274,9 @@ color: #ffffff;
 }
 
 
-  /* Main styles
-  ------------------------------ */
-  .icon a img{
-    width: 20px;
-    align-items: center;
-    padding:10px 10px 10px 10px;
-    }
+  Main styles
+  ------------------------------
+ 
     .welcome{
       color:rgb(0, 0, 0);
       padding-left: 0px;
@@ -304,9 +293,29 @@ color: #ffffff;
       margin-right: 20px;
       box-shadow:0px 4px 6px rgba(0, 0, 0, 0.25);
     }
+    .icon a img{
+      width: 20px;
+      height: 20px;
+      align-items: center;
+      padding:10px 10px 10px 10px;
+      }
+
+
     .footer{
       width: 350px;
+
+
 }
-
-
+@media screen and (max-width: 400px) {
+  .have-an-account{
+    color: #ffffff;
+      margin-left: 20%;
+      font-size: 16px;
+    }
+    .headertext{
+      width: 50%;
+      margin-left: 20px;
+      margin-top: -80px;
+      float: right;
+    }
 }
