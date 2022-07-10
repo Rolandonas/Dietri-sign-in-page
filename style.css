@@ -311,6 +311,7 @@ footer p{
     }
     footer p{
       width: 90%;
+      font-size: 13px;
     }
     .text-me{
       flex-direction: column;
