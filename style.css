@@ -1,47 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
 
 /* Header styles
 ------------------------------ */
-header{
-  padding:0px 0px;
+.top{
   height: 270px;
-  width: relative;
+  background-color: #7a121b;
+}
+header{
+  display: flex;
+  align-items: center;
+  height: 120px;
+  justify-content: space-between;
+  padding: 20px 30px;
+
   background-color: #7a121b;
   color: white;
 }
-
-header ul {
-  margin-right: 10px;
-  color: #ffffff;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.text-me{
+  display: flex;
+  align-items: center;
+  
 }
-.sign-up-1{
+
+/* .welcome{
+padding:0px 0px 0px -900px
+} */
+
+.sign-up-1:link, .sign-up-1:visited{
   color: white;
-  font-size: 20px;
   font-weight: 700;
   cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
 }  
-.headertext{
+.sign-up-1:hover, .sign-up-1:active {
+  color: #FAD427;
+}
+
+.logo-1{
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+nav{
+  display: inline-block;
+}
+/* .headertext{
   float: right;
   margin-top: 30px;
   line-height: 20px;
   text-align: center;
-}
-.sign-up-1{
-  font-size: 25px;
-}
+} */
+
 
 .have-an-account{
-color: #ffffff;
+  color: #ffffff;
   font-size: 16px;
+  margin-right: 5px;
+
 }
 
-header ul li {
-  display: inline;
+ /* ul li {
+  display: inline-block;
   line-height: 0px;
-  margin: 0 10px;
-}
+  margin: 0px 10px;
+} */
 
 /* header ul li a {
   color: #efefef;
@@ -49,11 +83,11 @@ header ul li {
   padding: 7px 13px;
   border-radius: 2px;
   text-transform: uppercase; */
-}
+
 /* main
 ------------------------------ */
-a.active,
-a:hover {
+
+.button:hover, .button:active {
   background: #d1d1d1;
   border-radius: 2px;
   transition: 0.5s;
@@ -62,39 +96,66 @@ a:hover {
 .Sign-in-container details{
   color: #7a121b;
   border: #FAD427
-  width: ;
 }
+.text-signin{
+  padding: 40px 0px 20px 0px;
+}
+.welcome{
+  padding: 0px 0px 10px 0px;
+  color: #7C7C7C;
+}
+.forgot{
+  padding: 20px 0px 20px 0px;
+  color: #7C7C7C;
+}
+.button{
+  
+  display: inline-block;
+  background-color: #FAD427;
+  border-radius:10px;
+  border: none;
+  width: 436px;
+  height: 46px;
+  text-align: center;
+  padding:10px 10px 20px 10px;
+  margin:0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inter;
+  text-decoration: none;
+  color: #494949;
 
+}
+.button:hover{
+  background: #d1d1d1;
+  border-radius: 10px;
+  transition: 0.5s;
+}
 
 .checkbtn {
   font-size: 30px;
   color: #ffffff;
 }
 
-
 .Sign-in-container{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* text-align: center; */
+
+}
+.sign-in-2{
   background-color: white;
-  padding: 30px 0px;
+  /* padding: 30px 0px; */
   box-shadow: 0 4px 10px #919191;
   width: 576px;
   /* max-width: 80%; */
-  height: 550px;
-  top: 160px;
-  margin: -110px auto 10px;
+  width: 50%;
+  height: 510px;
+  margin: -110px auto 10px auto;
 }
-.Sign-in-container h2{
-  background-color: antiquewhite;
-  padding: 0px 0px 0px 20px;
-  margin: 100px 20px 50px 20px;
-align-items: center;
-display: flex;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 29px;
-}
+
 .details input{
   width: 436px;
   height: 46px;
@@ -111,7 +172,6 @@ line-height: 29px;
 
 }
 .register-container input{
-  display:;
   max-width: 80%;
   margin: 0px auto;
   align-items: center;
@@ -125,28 +185,9 @@ line-height: 29px;
   max-width: 50%;
   opacity: 0.8;
 }
-.button{
-  
-  background-color: #FAD427;
-  border-radius:10px;
-  border: none;
-  width: 436px;
-  height: 46px;
-  padding:10px 90px 20px 90px;
-  margin:0 auto;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: inter;
-  display: block;
 
-}
-.button:hover{
-  background: #d1d1d1;
-  border-radius: 10px;
-  transition: 0.5s;
-}
 .icon a img{
-width: 40px;
+width: 60px;
 align-items: center;
 padding:10px 10px 10px 10px;
 }
@@ -173,12 +214,15 @@ padding:10px 10px 10px 10px;
   height: 1.5px;
   background-color:#D9D9D9;
   margin-top: 10px;
-  
 }
 .line-group p{
   margin: 0px;
   width: 60%;
   color: #7C7C7C;
+  text-align: center;
+}
+.signup{
+  text-align: center;
 }
 hr{
   margin-top: 70px;
@@ -186,7 +230,11 @@ hr{
 }
 
 .footer{
-  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 600px; */
   margin: 0 auto;
   text-align: center;
 }
@@ -195,127 +243,96 @@ footer h6{
   padding: 0px 0px;
   font-size: 15px;
   margin: 10px 0px;
-}
-
-footer p{
-  font-size: 12px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
------------------------------------
-
-
-@media screen and (max-width: 600px) {}
-
-@media screen and (max-width:600px)
-{
-  .Sign-in-container{
-    width: 80%;
-    align-items: center;
-  }
-  .button{width: 250px;}
-  .details input{
-    width:250px;
-  }
-  .forgot{margin-left: 0px;
-  }
-
-  header styles
-  ------------------------------
-  header{
-    width: 100%;
-  }
-
-  body {
-    height: 250px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-.logoheader{
-  line-height: 0px;
-}
-.sign-up-1{
-  font-size: 25px;
-
-}
-
-.have-an-account{
-color: #ffffff;
-  margin-left: 10%;
-  font-size: 16px;
-}
-.headertext{
-  width: 50%;
-  margin-left: 20px;
-  margin-top: 20px;
-  float: right;
-}
-.header{
-  padding: 0px;
-}
-.logo-1 img{
-    width: 170px;
-    height: 102px;
-    margin-top: 0px;
-}
-.logo-1{
-  display: inline;
-  width: 100%;
-  height: 150px;
-  margin: 0px;
   text-align: center;
 }
 
-.signin p{
-    width: 150px;
-    text-align: center;
+footer p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 29px;
+  /* width: 70%; */
+  margin: 0 200px;
 }
+@media screen and (max-width:900px){
+  .sign-in-2{
+    width: 90%;
+  }
+  footer p{
+    width: 80%;
+  }
+}
+@media screen and (max-width:540px) {
+  .have-an-account{
+    margin: 10px 0px 0px 0px;
+    padding: 0px 10px 0px 0px;
+      font-size: 12px;
+    }
+}
+@media screen and (max-width:498px) {
+  header{
+    padding: 20px 10px;
+  }
+  .mainlogo img{
+    height: 90px;
+  }
+  .sign-up-1{
+    display: flex;
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .have-an-account{
+    display: flex;
+    margin: -0px 0px 0px 0px;
+    padding: 0px 10px 0px 0px;
+      font-size: 12px;
+    }
 
+    .headertext{
+      display: flex;
+      float: right;
+      margin-top: -50px;
+      line-height: 0px;
+      /* margin: 0px 0px 0px 0px; */
+      padding: 0px 0px 0px 0px;
+    }
+    .details input{
+      width: 95%;
+    }
+    .sign-in-container{
+      text-align: cente;
+    }
+    .button{
+      width: 95%;
+    }
+    form{
+      width: 300px;
+    }
+    footer p{
+      width: 90%;
+    }
+    .text-me{
+      flex-direction: column;
+    }
 
-  Main styles
-  ------------------------------
- 
-    .welcome{
-      color:rgb(0, 0, 0);
-      padding-left: 0px;
-      margin: 0px 0px;
+}
+@media screen and (max-width:348px) {
+  .icon a img{
+    width: 50px;
     }
     
     .icon{
       background-color: #D9D9D9;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      display: inline-block;
-      margin-left: 20px;
-      margin-right: 20px;
-      box-shadow:0px 4px 6px rgba(0, 0, 0, 0.25);
+      width: 50px;
+      height: 50px;
     }
-    .icon a img{
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      padding:10px 10px 10px 10px;
-      }
-
-
-    .footer{
-      width: 350px;
-
-
-}
-@media screen and (max-width: 400px) {
-  .have-an-account{
-    color: #ffffff;
-      margin-left: 20%;
-      font-size: 16px;
+    .button{
+      width: 95%;
     }
-    .headertext{
-      width: 50%;
-      margin-left: 20px;
-      margin-top: -80px;
-      float: right;
+    form{
+      width: 270px;
     }
+   
+    
 }
